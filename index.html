@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CHENGYSHI</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Noto Sans SC", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+      function App() {
+        return (
+          <div className="bg-[#f5f5f5]">
+            <header className="py-4 fixed w-full z-50 text-white">
+              <div className="flex justify-between items-center px-8">
+                <div className="flex items-center space-x-4">
+                  <i className="fas fa-bars text-lg"></i>
+                  <h1 className="text-2xl font-semibold">CHENGYSHI</h1>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <a href="#" className="text-sm">
+                    登录
+                  </a>
+                  <a href="#" className="text-sm">
+                    注册
+                  </a>
+                  <a href="#" className="text-sm">
+                    客户服务
+                  </a>
+                  <a href="#" className="text-sm">
+                    网站导航
+                  </a>
+                </div>
+              </div>
+            </header>
+
+            <main>
+              <section className="relative">
+                <img
+                  src="https://placehold.co/1920x1080"
+                  alt="A large banner showing a person holding a colorful Louis Vuitton scarf"
+                  className="w-full h-auto"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <button className="bg-black text-white py-2 px-4">
+                    探索更多
+                  </button>
+                </div>
+                <video
+                  autoPlay
+                  playsInline
+                  src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/dUQ4SPBCwY_HD.mp4"
+                  loop
+                  tabIndex="-1"
+                  aria-hidden
+                  muted
+                  style={{position: 'absolute',top: 0,left: 0,right: 0,bottom: 0}}
+                ></video>
+              </section>
+
+              <section className="grid grid-cols-2 gap-4 p-8">
+                <div>
+                  <img
+                    src="https://placehold.co/600x900"
+                    alt="Model wearing a black leather jacket with a Louis Vuitton bag"
+                    className="w-full h-auto"
+                  />
+                  <p className="text-center mt-2">女士精选</p>
+                </div>
+                <div>
+                  <img
+                    src="https://placehold.co/600x900"
+                    alt="Pink Louis Vuitton perfume bottles"
+                    className="w-full h-auto"
+                  />
+                  <p className="text-center mt-2">最新香氛</p>
+                </div>
+                <div>
+                  <img
+                    src="https://placehold.co/600x900"
+                    alt="Two models posing next to a statue with a scenic background"
+                    className="w-full h-auto"
+                  />
+                  <p className="text-center mt-2">2024 春夏女装系列</p>
+                </div>
+                <div>
+                  <img
+                    src="https://placehold.co/600x900"
+                    alt="Man in a beige jacket standing in a snowy landscape"
+                    className="w-full h-auto"
+                  />
+                  <p className="text-center mt-2">礼物的艺术 BY YUAN</p>
+                </div>
+              </section>
+
+              <section className="relative">
+                <img
+                  src="https://placehold.co/1920x1080"
+                  alt="A person in a dark setting with a focus on a Louis Vuitton jacket"
+                  className="w-full h-auto"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <button className="bg-black text-white py-2 px-4">
+                    探索更多
+                  </button>
+                </div>
+              </section>
+
+              <section className="grid grid-cols-2 gap-4 p-8">
+                <div>
+                  <img
+                    src="https://placehold.co/600x900"
+                    alt="Two models interacting with each other, one sitting and one standing"
+                    className="w-full h-auto"
+                  />
+                  <p className="text-center mt-2">女士精选</p>
+                </div>
+                <div>
+                  <img
+                    src="https://placehold.co/600x900"
+                    alt="Man in a black suit with a woman leaning towards him"
+                    className="w-full h-auto"
+                  />
+                  <p className="text-center mt-2">男士精选</p>
+                </div>
+              </section>
+
+              <section className="relative">
+                <img
+                  src="https://placehold.co/1920x1080"
+                  alt="A model pushing a cart full of Louis Vuitton products and gift boxes"
+                  className="w-full h-auto"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <button className="bg-black text-white py-2 px-4">
+                    了解更多
+                  </button>
+                </div>
+              </section>
+            </main>
+
+            <footer className="bg-white py-8">
+              <div className="grid grid-cols-3 gap-8 px-8">
+                <div>
+                  <p className="text-sm">新品</p>
+                  <p className="text-sm mt-2">女士</p>
+                  <p className="text-sm mt-2">男士</p>
+                  <p className="text-sm mt-2">艺术生活</p>
+                  <p className="text-sm mt-2">杂志</p>
+                </div>
+                <div>
+                  <p className="text-sm">客户服务</p>
+                  <p className="text-sm mt-2">联系我们</p>
+                  <p className="text-sm mt-2">常见问题</p>
+                  <p className="text-sm mt-2">订购与支付</p>
+                  <p className="text-sm mt-2">送货与取货</p>
+                </div>
+                <div>
+                  <p className="text-sm">法律信息</p>
+                  <p className="text-sm mt-2">隐私政策</p>
+                  <p className="text-sm mt-2">条款与条件</p>
+                  <p className="text-sm mt-2">版权声明</p>
+                  <p className="text-sm mt-2">知识产权</p>
+                </div>
+              </div>
+              <div className="text-center mt-8">
+                <p className="text-xs">版权所有 © CHENGYSHI</p>
+              </div>
+            </footer>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("app"));
+    </script>
+  </body>
+</html>
